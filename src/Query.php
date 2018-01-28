@@ -6,6 +6,7 @@ class Query
     public function getPostCount($post_type = 'post')
     {
         $posts = wp_count_posts($post_type);
+
         return $posts->publish;
     }
 
@@ -32,8 +33,7 @@ class Query
     {
         $related = [];
 
-        foreach ($terms as $term) {
-            var_dump($term->name);
+        foreach ($terms as $term) {\
             $related[] = $term->term_id;
         }
 
