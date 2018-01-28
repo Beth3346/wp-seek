@@ -33,7 +33,7 @@ class Query
     {
         $related = [];
 
-        foreach ($terms as $term) {\
+        foreach ($terms as $term) {
             $related[] = $term->term_id;
         }
 
